@@ -10,7 +10,8 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>skysail kursplan</title>
-
+    <link rel="shortcut icon" href="img/logo_fav.png">
+    <link rel="icon" href="img/logo_fav.png">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/timetable.css" rel="stylesheet">
@@ -39,8 +40,8 @@
               <h5 class="modal-title" id="myModalLabel">Bitte Zugangsdaten eingeben</h5>
             </div>
             <div class="modal-body">
-              <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-              <input class="form-control" id="inputPassword" placeholder="Password" type="password"></input>
+              <input class="form-control" id="inputEmail" placeholder="E-Mail" type="text" name="email">
+              <input class="form-control" id="inputPassword" placeholder="Passwort" type="password"></input>
             </div>
             <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
@@ -49,7 +50,7 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> <!-- End Modal Login -->
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -60,34 +61,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">skysail kursplan</a>
+          <a class="navbar-brand" href="#">skysail kursplan <img src="img/logo.gif"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <!--  <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-          <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>-->
           <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myLogin" data-toggle="modal">Anmelden</a></li>
-      </ul>
-
-
-      <!--    <form class="navbar-form navbar-right">
-            <button type="submit" class="btn btn-default">Anmelden</button>
-
-          </form> -->
+            <li><a href="#myLogin" data-toggle="modal">Anmelden</a></li>
+          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -99,28 +78,31 @@
         <h2>kursplan publisher</h2>
         <p>Veröffentlichen Sie Sportkurse, Kursräume, Kursleiter Ihres Turnvereins
           oder Fitnessclubs <br> und halten Sie Ihre Kursteilnehmer auf dem Laufenden.</p>
-        <p><a class="btn btn-success btn-lg" href="#" role="button">Mehr erfahren &raquo;</a></p>
+      <p><a class="btn btn-success btn-lg" href="#learnmore" role="button">Mehr erfahren &raquo;</a></p>
+        </div>
+        <div class="monitor hide-small" style="top: 390px;">
+          <img alt="Kursplan für Ihren Sportclub" class="img-responsive" src="img/monitor.png">
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="learnmore">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>einbinden</h2>
+          <p>Bitten Sie Ihren Web-Administrator, skysail kursplan in die Webseite Ihres Sportclubs einzubinden.</p>
+          <p><a class="btn btn-default" href="#" role="button">so geht's &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>eingeben</h2>
+          <p>Bitten Sie Ihre Kursplan-Fee, den aktuellen Kursplan Ihres Sportsclubs in skysail kursplan einzupflegen.</p>
+          <p><a class="btn btn-default" href="#" role="button">so geht's &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>einladen</h2>
+          <p>Laden Sie Kursleiter und Kursteilnehmer dazu ein, die tolle Benachrichtigungsfunktion zu nutzen!</p>
+          <p><a class="btn btn-default" href="#" role="button">so geht's &raquo;</a></p>
         </div>
       </div>
 
@@ -138,5 +120,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
