@@ -1,0 +1,17 @@
+#
+#  RUN SPECIFICATION
+#
+
+
+Bundle-Version:				1.0.0.${tstamp}
+Bundle-SymbolicName:		com.acme.prime.upper.application.launch
+JPM-Command:					upper
+
+
+-runfw:						org.eclipse.osgi
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=com.acme.prime.upper.application)'
+
+-runbundles: \
+	${error;Resolve first}
