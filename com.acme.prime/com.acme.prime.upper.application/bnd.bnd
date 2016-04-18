@@ -23,7 +23,11 @@ JPM-Command:			upper
 	web=web
 
 -buildpath: \
-	osgi.enroute.base.api
+	osgi.enroute.base.api,\
+	osgi.enroute.web.simple.provider,\
+	osgi.enroute.rest.simple.provider,\
+	osgi.enroute.executor.simple.provider,\
+	osgi.enroute.dto.bndlib.provider 
 	
 -testpath: \
 	osgi.enroute.junit.wrapper;version=4.12
